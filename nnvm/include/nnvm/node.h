@@ -135,6 +135,10 @@ struct NodeAttrs {
    * stateful operators.
    */
   std::vector<std::shared_ptr<Symbol> > subgraphs;
+  /*!
+   * \brief Fusion storage (compiled function, attribute inference  results).
+   */
+  any fusion_data;
 };
 
 /*!
